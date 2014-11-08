@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Wadl2wiki by schrepfler</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/schrepfler/wadl2wiki">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Wadl2wiki</h1>
+            <h2>WADL to Wiki format documentation generator</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/schrepfler/wadl2wiki/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/schrepfler/wadl2wiki/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="wadl-to-wiki" class="anchor" href="#wadl-to-wiki" aria-hidden="true"><span class="octicon octicon-link"></span></a>WADL to WIKI</h1>
+
+<h1>
+<a id="work-in-progres" class="anchor" href="#work-in-progres" aria-hidden="true"><span class="octicon octicon-link"></span></a>WORK IN PROGRES</h1>
+
+<p>A simple WADL to Wiki (Confluence / JIRA Markup) documentation generator, written for Node.js.</p>
+
+<h2>
+<a id="confluence--jira-wiki-process" class="anchor" href="#confluence--jira-wiki-process" aria-hidden="true"><span class="octicon octicon-link"></span></a>Confluence / Jira wiki Process</h2>
+
+<p>Output can be pasted into Confluence, using the Insert Markup feature; </p>
+
+<p><img src="https://raw.github.com/jhitchcock/raml2wiki/master/wikimenu.png" alt="Wiki menu"></p>
+
+<p><img src="https://raw.github.com/jhitchcock/raml2wiki/master/wikiinsert.png" alt="Wiki insert"></p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<pre><code>npm i -g wadl2wiki
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a id="as-a-command-line-script" class="anchor" href="#as-a-command-line-script" aria-hidden="true"><span class="octicon octicon-link"></span></a>As a command line script</h3>
+
+<pre><code>wadl2wiki example.wadl &gt; example.txt
+wadl2wiki -i example.wadl -o example.txt
+wadl2wiki -s -i example.wadl -o example.txt
+</code></pre>
+
+<p>Using your own templates:</p>
+
+<pre><code>wadl2txt -t custom-template.handlebars -r custom-resource.handlebars -m custom-item.handlebars -i example.wadl -o example.txt
+</code></pre>
+
+<h2>
+<a id="example-output" class="anchor" href="#example-output" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example Output</h2>
+
+<h3>
+<a id="start-of-wiki-page" class="anchor" href="#start-of-wiki-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Start of Wiki Page</h3>
+
+<p><img src="https://raw.github.com/jhitchcock/raml2wiki/master/wikiExample1.png" alt="Start of Wiki Page"></p>
+
+<h3>
+<a id="example-endpoint-section" class="anchor" href="#example-endpoint-section" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example Endpoint Section</h3>
+
+<p><img src="https://raw.github.com/jhitchcock/raml2wiki/master/wikiExample2.png" alt="Example Endpoint"></p>
+
+<p>This script uses the parsing method and wadl2json script by Rodolphe Belouin
+(<a href="https://github.com/rbelouin/wadl2json">https://github.com/rbelouin/wadl2json</a>)</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/schrepfler">schrepfler</a> can be found on <a href="https://github.com/schrepfler/wadl2wiki">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
