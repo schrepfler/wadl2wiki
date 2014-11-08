@@ -1,26 +1,32 @@
 {
   "name": "wadl2wiki",
   "version": "0.0.1",
-  "description": "RAML to Wiki format documentation generator",
-  "main": "lib/raml2wiki.js",
+  "description": "WADL to Wiki format documentation generator",
+  "main": "lib/wadl2wiki.js",
   "scripts": {
     "test": "mocha -R nyan"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jhitchcock/raml2wiki.git"
+    "url": "https://github.com/schrepfler/wadl2wiki.git"
   },
   "keywords": [
-    "raml"
+    "wadl",
+    "wiki",
+    "confluence",
+    "rest",
+    "documentation"
   ],
-  "author": "James Hitchcock <james@jhitchcock.com> (http://jhitchcock.com/)",
+  "author": "Srdan Srepfler <schrepfler@gmail.com> (http://schrepfler.blogspot.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jhitchcock/raml2wiki/issues"
+    "url": "https://github.com/schrepfler/wadl2wiki/issues"
   },
-  "homepage": "https://github.com/schrepfler/wadl2wiki",
+  "homepage": "http://schrepfler.github.io/wadl2wiki",
   "devDependencies": {
     "chai": "^1.9.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.6.0",
     "mocha": "^2.0.1"
   }
 }
