@@ -1,5 +1,5 @@
 var should = require('chai').should(),
-    raml2wiki = require('../lib/raml2wiki');
+    wadl2wiki = require('../lib/wadl2wiki');
 
 describe('#handlebarsHelpers', function() {
 

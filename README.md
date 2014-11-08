@@ -1,6 +1,7 @@
-# RAML to WIKI
+# WADL to WIKI
+# WORK IN PROGRES
 
-A simple RAML to Wiki (Confluence / JIRA Markup) documentation generator, written for Node.js.
+A simple WADL to Wiki (Confluence / JIRA Markup) documentation generator, written for Node.js.
 
 ## Confluence / Jira wiki Process
 
@@ -14,7 +15,7 @@ Output can be pasted into Confluence, using the Insert Markup feature;
 
 ## Install
 ```
-npm i -g raml2wiki
+npm i -g wadl2wiki
 ```
 
 
@@ -23,15 +24,15 @@ npm i -g raml2wiki
 ### As a command line script
 
 ```
-raml2wiki example.raml > example.txt
-raml2wiki -i example.raml -o example.txt
-raml2wiki -s -i example.raml -o example.txt
+wadl2wiki example.wadl > example.txt
+wadl2wiki -i example.wadl -o example.txt
+wadl2wiki -s -i example.wadl -o example.txt
 ```
 
 Using your own templates:
 
 ```
-raml2txt -t custom-template.handlebars -r custom-resource.handlebars -m custom-item.handlebars -i example.raml -o example.txt
+wadl2txt -t custom-template.handlebars -r custom-resource.handlebars -m custom-item.handlebars -i example.wadl -o example.txt
 ```
 
 ## Example Output
@@ -42,8 +43,5 @@ raml2txt -t custom-template.handlebars -r custom-resource.handlebars -m custom-i
 ### Example Endpoint Section
 ![Example Endpoint](https://raw.github.com/jhitchcock/raml2wiki/master/wikiExample2.png)
 
-
-This script uses the parsing method and raml2obj script by Kevin Renskers 
-(https://github.com/kevinrenskers/raml2obj)
-(https://github.com/kevinrenskers/raml2md)
-
+This script uses the parsing method and wadl2json script by Rodolphe Belouin
+(https://github.com/rbelouin/wadl2json)

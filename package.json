@@ -1,6 +1,6 @@
 {
-  "name": "raml2wiki",
-  "version": "0.1.1",
+  "name": "wadl2wiki",
+  "version": "0.0.1",
   "description": "RAML to Wiki format documentation generator",
   "main": "lib/raml2wiki.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/jhitchcock/raml2wiki/issues"
   },
-  "homepage": "https://github.com/jhitchcock/raml2wiki",
+  "homepage": "https://github.com/schrepfler/wadl2wiki",
   "devDependencies": {
     "chai": "^1.9.2",
     "mocha": "^2.0.1"
