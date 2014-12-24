@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/schrepfler/wadl2wiki.png?label=ready&title=Ready)](https://waffle.io/schrepfler/wadl2wiki)
 # WADL to WIKI
 # WORK IN PROGRES
 
