@@ -31,3 +31,4 @@ lib/*.raml
 lib/test.txt
 *.tgz
 .idea/
+build/
