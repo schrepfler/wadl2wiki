@@ -30,3 +30,4 @@ lib/*.json
 lib/*.raml
 lib/test.txt
 *.tgz
+.idea/
